@@ -22,7 +22,6 @@ if not on chromebook or if on a supported platform.
 
 The release is the full source code of the webpage, so if you want to build it yourself (the first shell script),
 you can just download that and use that as the archive to run (make sure to rename it to astroUNL.zip)
-
 <details open>
 <summary>SWFS</summary>
 <!--All you need is a blank line-->
