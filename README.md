@@ -1,57 +1,288 @@
-# ruffle-selfhosted
+# This took 3 hours.
 
-ruffle-selfhosted is the intended way to get Ruffle onto your website.
-
-You may either include it and forget about it, and we will polyfill existing Flash content,
-or use our APIs for custom configurations or more advanced usages of the Ruffle player.
-
-## Using ruffle-selfhosted
-
-For more examples and in-depth documentation on how to use Ruffle on your website, please
-[check out our wiki](https://github.com/ruffle-rs/ruffle/wiki/Using-Ruffle#web).
-
-### Host Ruffle
-
-The `selfhosted` package is configured for websites that do not use bundlers or npm and just want
-to get up and running. If you'd prefer to use Ruffle through npm and a bundler, please 
-[refer to ruffle core](https://github.com/ruffle-rs/ruffle/tree/master/web/packages/core).
-
-Before you can get started with using Ruffle on your website, you must host its files yourself.
-Either take the [latest build](https://github.com/ruffle-rs/ruffle/releases)
-or [build it yourself](../../README.md), and make these files accessible by your web server.
-
-Please note that the `.wasm` file must be served properly, and some web servers may not do that
-correctly out of the box. Please see [our wiki](https://github.com/ruffle-rs/ruffle/wiki/Using-Ruffle#configure-wasm-mime-type)
-for instructions on how to configure this, if you encounter a `Incorrect response MIME type` error.
-
-### "Plug and Play"
-
-If you have an existing website with flash content, you can simply include Ruffle as a script and
-our polyfill magic will replace everything for you. No fuss, no mess.
-
-```html
-<script src="path/to/ruffle/ruffle.js"></script>
+Every swf from astroUNL's project, for astronomy
+Built by (zip = astroUNL.zip):
+```sh
+mkdir astro
+cd astro
+mv ../astroUNL.zip ./
+unzip astroUNL.zip
+chmod -R 777 *
+mkdir swfs
+find ./astroUNL -type f -name '*.swf' -exec mv -i {} ./swfs/ \;
+tar -cvf tarred.tar.gz ./swfs
+curl -T tarred.tar.gz -Lv station307.com 2>&1 | grep located-at
 ```
+or just git clone my repo
 
-### Javascript API
+Next, navigate to [ruffle](https://ruffle.rs), or use an emulator,
+navigate to demo (or if not on chromebook, download it),
+and then upload (if on demo) any swf file to use it, or use the app
+if not on chromebook or if on a supported platform.
 
-If you want to control the Ruffle player, you may use our Javascript API.
+The release is the full source code of the webpage, so if you want to build it yourself (the first shell script),
+you can just download that and use that as the archive to run (make sure to rename it to astroUNL.zip)
 
-```html
-<script>
-    window.RufflePlayer = window.RufflePlayer || {};
+<details open>
+<summary>SWFS</summary>
+<!--All you need is a blank line-->
 
-    window.addEventListener("DOMContentLoaded", () => {
-        let ruffle = window.RufflePlayer.newest();
-        let player = ruffle.createPlayer();
-        let container = document.getElementById("container");
-        container.appendChild(player);
-        player.load("movie.swf");
-    });
-</script>
-<script src="path/to/ruffle/ruffle.js"></script>
-```
+[1\_Ecliptic.swf](1_Ecliptic.swf.html)  
+[2\_LatitudeOfDirectRays.swf](2_LatitudeOfDirectRays.swf.html)  
+[3\_RisingAndSettingAzimuthsA.swf](3_RisingAndSettingAzimuthsA.swf.html)  
+[4\_RisingAndSettingAzimuthsB.swf](4_RisingAndSettingAzimuthsB.swf.html)  
+[5\_NoontimeAltitude.swf](5_NoontimeAltitude.swf.html)  
+[6\_CelestialSphere.swf](6_CelestialSphere.swf.html)  
+[AngularDiameter3\_Table.swf](AngularDiameter3_Table.swf.html)  
+[Atmospheric1\_EscapeVelocity.swf](Atmospheric1_EscapeVelocity.swf.html)  
+[Atmospheric2\_GasSpeed.swf](Atmospheric2_GasSpeed.swf.html)  
+[Atmospheric3\_EscapingParticles.swf](Atmospheric3_EscapingParticles.swf.html)  
+[Atmospheric4\_Speed&Temp.swf](Atmospheric4_Speed&Temp.swf.html)  
+[Atmospheric4\_SpeedTemp.swf](Atmospheric4_SpeedTemp.swf.html)  
+[Atmospheric5\_SpeedDistributions.swf](Atmospheric5_SpeedDistributions.swf.html)  
+[CCDMiniSim.swf](CCDMiniSim.swf.html)  
+[DopplerShift1.swf](DopplerShift1.swf.html)  
+[DopplerShift2.swf](DopplerShift2.swf.html)  
+[DopplerShift3.swf](DopplerShift3.swf.html)  
+[DopplerShift4.swf](DopplerShift4.swf.html)  
+[DopplerShift5.swf](DopplerShift5.swf.html)  
+[EarthTimes.swf](EarthTimes.swf.html)  
+[EarthTimes3D.swf](EarthTimes3D.swf.html)  
+[Flat\_Horizon\_View\_AllDifferences.swf](Flat_Horizon_View_AllDifferences.swf.html)  
+[Flat\_Horizon\_View\_SamePhase.swf](Flat_Horizon_View_SamePhase.swf.html)  
+[Flat\_Horizon\_View\_sameStartTime.swf](Flat_Horizon_View_sameStartTime.swf.html)  
+[ForceOfGravity1.swf](ForceOfGravity1.swf.html)  
+[ForceOfGravity2.swf](ForceOfGravity2.swf.html)  
+[ForceOfGravity3A.swf](ForceOfGravity3A.swf.html)  
+[ForceOfGravity3B.swf](ForceOfGravity3B.swf.html)  
+[ForceOfGravity3C.swf](ForceOfGravity3C.swf.html)  
+[ForceOfGravity3D.swf](ForceOfGravity3D.swf.html)  
+[InferiorPeriods.swf](InferiorPeriods.swf.html)  
+[KeplerFirstLaw.swf](KeplerFirstLaw.swf.html)  
+[KeplerSecondLaw.swf](KeplerSecondLaw.swf.html)  
+[KeplerThirdLaw.swf](KeplerThirdLaw.swf.html)  
+[Luminosity1\_Of\_Stars.swf](Luminosity1_Of_Stars.swf.html)  
+[Luminosity2\_HR\_Diagram.swf](Luminosity2_HR_Diagram.swf.html)  
+[Luminosity3\_HR\_Diagram.swf](Luminosity3_HR_Diagram.swf.html)  
+[Luminosity4\_HR\_Diagram.swf](Luminosity4_HR_Diagram.swf.html)  
+[Luminosity5\_Table.swf](Luminosity5_Table.swf.html)  
+[Lunar1\_ST.swf](Lunar1_ST.swf.html)  
+[Lunar2\_ST.swf](Lunar2_ST.swf.html)  
+[Lunar3\_ST.swf](Lunar3_ST.swf.html)  
+[MBDDemo.swf](MBDDemo.swf.html)  
+[Magnitude1\_Distance.swf](Magnitude1_Distance.swf.html)  
+[Magnitude2\_InverseSquare.swf](Magnitude2_InverseSquare.swf.html)  
+[Magnitude3a\_SameDistance.swf](Magnitude3a_SameDistance.swf.html)  
+[Magnitude3b\_SameLuminosity.swf](Magnitude3b_SameLuminosity.swf.html)  
+[Magnitude3c\_SameApparent.swf](Magnitude3c_SameApparent.swf.html)  
+[Magnitude4\_TenParsecs.swf](Magnitude4_TenParsecs.swf.html)  
+[Magnitude5\_DistanceModulusTable.swf](Magnitude5_DistanceModulusTable.swf.html)  
+[MeridianTimes.swf](MeridianTimes.swf.html)  
+[MotionoftheSky1.swf](MotionoftheSky1.swf.html)  
+[MotionoftheSky2.swf](MotionoftheSky2.swf.html)  
+[MotionoftheSky3\_ST.swf](MotionoftheSky3_ST.swf.html)  
+[PercentOfIllumination.swf](PercentOfIllumination.swf.html)  
+[PhaseOrder.swf](PhaseOrder.swf.html)  
+[PhaseOrder\_3DSunFixed.swf](PhaseOrder_3DSunFixed.swf.html)  
+[PhaseOrder\_3DSunVariable.swf](PhaseOrder_3DSunVariable.swf.html)  
+[PhaseOrder\_GeometricView.swf](PhaseOrder_GeometricView.swf.html)  
+[PhaseOrder\_MultipleViews.swf](PhaseOrder_MultipleViews.swf.html)  
+[Pulse.swf](Pulse.swf.html)  
+[RisingSettingTimes.swf](RisingSettingTimes.swf.html)  
+[ScientificMethod.swf](ScientificMethod.swf.html)  
+[Season1\_Distance.swf](Season1_Distance.swf.html)  
+[Season2\_Flashlight.swf](Season2_Flashlight.swf.html)  
+[Season3\_illuminatedAreas.swf](Season3_illuminatedAreas.swf.html)  
+[Season4\_Time.swf](Season4_Time.swf.html)  
+[Season5\_Tilt.swf](Season5_Tilt.swf.html)  
+[SuperiorPeriods.swf](SuperiorPeriods.swf.html)  
+[SynodicCalculator4.swf](SynodicCalculator4.swf.html)  
+[Telescope1.swf](Telescope1.swf.html)  
+[altazimuth.swf](altazimuth.swf.html)  
+[antipodesexplorer.swf](antipodesexplorer.swf.html)  
+[balloon.swf](balloon.swf.html)  
+[basketball.swf](basketball.swf.html)  
+[bbexplorer.swf](bbexplorer.swf.html)  
+[bigdipper.swf](bigdipper.swf.html)  
+[blackbody.swf](blackbody.swf.html)  
+[blackbody\_old.swf](blackbody_old.swf.html)  
+[blinkComparatorSimulator.swf](blinkComparatorSimulator.swf.html)  
+[browser.swf](browser.swf.html)  
+[buckets.swf](buckets.swf.html)  
+[ce\_hc.swf](ce_hc.swf.html)  
+[ce\_hc\_convert.swf](ce_hc_convert.swf.html)  
+[cec\_assessment.swf](cec_assessment.swf.html)  
+[cec\_demo.swf](cec_demo.swf.html)  
+[cec\_flat.swf](cec_flat.swf.html)  
+[cec\_sky.swf](cec_sky.swf.html)  
+[celestialSphereLabels.swf](celestialSphereLabels.swf.html)  
+[celestialhorizon.swf](celestialhorizon.swf.html)  
+[celhorcomp.swf](celhorcomp.swf.html)  
+[centerofmass.swf](centerofmass.swf.html)  
+[circles.swf](circles.swf.html)  
+[classactionmaster.swf](classactionmaster.swf.html)  
+[classactionmaster\_new.swf](classactionmaster_new.swf.html)  
+[clusterFittingExplorer.swf](clusterFittingExplorer.swf.html)  
+[configurations.swf](configurations.swf.html)  
+[configurationsSimulator.swf](configurationsSimulator.swf.html)  
+[configurationssimulator.swf](configurationssimulator.swf.html)  
+[coord.swf](coord.swf.html)  
+[daylighthoursexplorer.swf](daylighthoursexplorer.swf.html)  
+[daylightsimulator.swf](daylightsimulator.swf.html)  
+[declination\_ranges.swf](declination_ranges.swf.html)  
+[dipperclock.swf](dipperclock.swf.html)  
+[dopplerShiftDemo.swf](dopplerShiftDemo.swf.html)  
+[dopplershift.swf](dopplershift.swf.html)  
+[drivingthroughsnow.swf](drivingthroughsnow.swf.html)  
+[earthorbitplot.swf](earthorbitplot.swf.html)  
+[ebs.swf](ebs.swf.html)  
+[eclipsetable.swf](eclipsetable.swf.html)  
+[eclipsingbinarysim.swf](eclipsingbinarysim.swf.html)  
+[eclipticsimulator.swf](eclipticsimulator.swf.html)  
+[eduBeamSpread.swf](eduBeamSpread.swf.html)  
+[eduDecRanges.swf](eduDecRanges.swf.html)  
+[eduDistribution.swf](eduDistribution.swf.html)  
+[eduEnergyLevels.swf](eduEnergyLevels.swf.html)  
+[eduHorizon.swf](eduHorizon.swf.html)  
+[eduHorizonDiagram.swf](eduHorizonDiagram.swf.html)  
+[eduMBD.swf](eduMBD.swf.html)  
+[eduSideBeamView.swf](eduSideBeamView.swf.html)  
+[eduSkyMotion.swf](eduSkyMotion.swf.html)  
+[edumap.swf](edumap.swf.html)  
+[ellipsedemo.swf](ellipsedemo.swf.html)  
+[elong-good2.swf](elong-good2.swf.html)  
+[elong-good3.swf](elong-good3.swf.html)  
+[emspectrum.swf](emspectrum.swf.html)  
+[exoplanetComboDiagram.swf](exoplanetComboDiagram.swf.html)  
+[expressInstall.swf](expressInstall.swf.html)  
+[filters.swf](filters.swf.html)  
+[flatsky\_assessment.swf](flatsky_assessment.swf.html)  
+[formationtemps.swf](formationtemps.swf.html)  
+[fullmoondec.swf](fullmoondec.swf.html)  
+[fusion01.swf](fusion01.swf.html)  
+[fusion02.swf](fusion02.swf.html)  
+[galacticredshift.swf](galacticredshift.swf.html)  
+[gasRetentionPlot.swf](gasRetentionPlot.swf.html)  
+[gasRetentionSimulator.swf](gasRetentionSimulator.swf.html)  
+[globe\_discs.swf](globe_discs.swf.html)  
+[gravalgebra.swf](gravalgebra.swf.html)  
+[gravcalc.swf](gravcalc.swf.html)  
+[gravity.swf](gravity.swf.html)  
+[hammerthrower.swf](hammerthrower.swf.html)  
+[heliacalrisingsim.swf](heliacalrisingsim.swf.html)  
+[horizon.swf](horizon.swf.html)  
+[horizon\_coord.swf](horizon_coord.swf.html)  
+[hrExplorer.swf](hrExplorer.swf.html)  
+[hrexplorer.swf](hrexplorer.swf.html)  
+[hydrogen\_atom.swf](hydrogen_atom.swf.html)  
+[hydrogenatom.swf](hydrogenatom.swf.html)  
+[kepler.swf](kepler.swf.html)  
+[keplers\_third.swf](keplers_third.swf.html)  
+[latAngleDemo.swf](latAngleDemo.swf.html)  
+[latsim.swf](latsim.swf.html)  
+[lightcurve.swf](lightcurve.swf.html)  
+[lightdetector.swf](lightdetector.swf.html)  
+[longlat.swf](longlat.swf.html)  
+[lookbacktimesim.swf](lookbacktimesim.swf.html)  
+[lps.swf](lps.swf.html)  
+[lunar\_applet030.swf](lunar_applet030.swf.html)  
+[lunar\_applet033.swf](lunar_applet033.swf.html)  
+[lunar\_phaser.swf](lunar_phaser.swf.html)  
+[lunarapplet.swf](lunarapplet.swf.html)  
+[lunarphasequizzer.swf](lunarphasequizzer.swf.html)  
+[marsorbit.swf](marsorbit.swf.html)  
+[meltednail.swf](meltednail.swf.html)  
+[meridaltdiagram.swf](meridaltdiagram.swf.html)  
+[meridional\_calculator.swf](meridional_calculator.swf.html)  
+[milkyWayHabitability.swf](milkyWayHabitability.swf.html)  
+[milkywayrotationalvelocity.swf](milkywayrotationalvelocity.swf.html)  
+[moonBisectorDemo.swf](moonBisectorDemo.swf.html)  
+[moonPhasesHorizonDiagram.swf](moonPhasesHorizonDiagram.swf.html)  
+[moon\_sun.swf](moon_sun.swf.html)  
+[moonbisector.swf](moonbisector.swf.html)  
+[mooninc.swf](mooninc.swf.html)  
+[moonphases.swf](moonphases.swf.html)  
+[obliquity.swf](obliquity.swf.html)  
+[parallaxDiagram.swf](parallaxDiagram.swf.html)  
+[parallaxExplorer.swf](parallaxExplorer.swf.html)  
+[parallaxdiag.swf](parallaxdiag.swf.html)  
+[pathtracer.swf](pathtracer.swf.html)  
+[phaseDemonstrator.swf](phaseDemonstrator.swf.html)  
+[phaseDemonstrator004.swf](phaseDemonstrator004.swf.html)  
+[photometrySimulator.swf](photometrySimulator.swf.html)  
+[planetDensity.swf](planetDensity.swf.html)  
+[planetGroups.swf](planetGroups.swf.html)  
+[planetOrder.swf](planetOrder.swf.html)  
+[positionsDemonstrator006.swf](positionsDemonstrator006.swf.html)  
+[positionsdemonstrator.swf](positionsdemonstrator.swf.html)  
+[projectile.swf](projectile.swf.html)  
+[ptolemaic.swf](ptolemaic.swf.html)  
+[pulsarPeriodSim001.swf](pulsarPeriodSim001.swf.html)  
+[pulsatingstar.swf](pulsatingstar.swf.html)  
+[radecdemo.swf](radecdemo.swf.html)  
+[radialVelocitySimulator.swf](radialVelocitySimulator.swf.html)  
+[radialvelocitydemo.swf](radialvelocitydemo.swf.html)  
+[radialvelocitysimulator.swf](radialvelocitysimulator.swf.html)  
+[rays.swf](rays.swf.html)  
+[registrationSimulator.swf](registrationSimulator.swf.html)  
+[retrograde.swf](retrograde.swf.html)  
+[risingSetting.swf](risingSetting.swf.html)  
+[scale.swf](scale.swf.html)  
+[seasons\_ecliptic.swf](seasons_ecliptic.swf.html)  
+[seasonsim.swf](seasonsim.swf.html)  
+[sexagesimalCalculator.swf](sexagesimalCalculator.swf.html)  
+[shadowsim.swf](shadowsim.swf.html)  
+[siderealSolarTime.swf](siderealSolarTime.swf.html)  
+[siderealTimeAndHourAngleDemo.swf](siderealTimeAndHourAngleDemo.swf.html)  
+[simpleSolarSystem.swf](simpleSolarSystem.swf.html)  
+[sinusoid.swf](sinusoid.swf.html)  
+[skyBandSimulator.swf](skyBandSimulator.swf.html)  
+[smallangledemo.swf](smallangledemo.swf.html)  
+[snCurveExplorer.swf](snCurveExplorer.swf.html)  
+[snellslaw.swf](snellslaw.swf.html)  
+[solarsystemproperties.swf](solarsystemproperties.swf.html)  
+[spectroParallax.swf](spectroParallax.swf.html)  
+[spectroparallax.swf](spectroparallax.swf.html)  
+[spectrum010.swf](spectrum010.swf.html)  
+[starColorSlider.swf](starColorSlider.swf.html)  
+[stars.swf](stars.swf.html)  
+[stellarHabitableZone.swf](stellarHabitableZone.swf.html)  
+[stellarVelocity1.swf](stellarVelocity1.swf.html)  
+[stellarVelocity2.swf](stellarVelocity2.swf.html)  
+[stellarVelocity3.swf](stellarVelocity3.swf.html)  
+[stellarVelocity4.swf](stellarVelocity4.swf.html)  
+[stellarlum.swf](stellarlum.swf.html)  
+[stellarluminosity.swf](stellarluminosity.swf.html)  
+[stellarmag.swf](stellarmag.swf.html)  
+[stellarvel.swf](stellarvel.swf.html)  
+[sunPathDiagramII001.swf](sunPathDiagramII001.swf.html)  
+[sunPathSimulator.swf](sunPathSimulator.swf.html)  
+[sunmotions.swf](sunmotions.swf.html)  
+[sunmotionsoverview.swf](sunmotionsoverview.swf.html)  
+[sunpath.swf](sunpath.swf.html)  
+[sunpaths.swf](sunpaths.swf.html)  
+[sunsrays.swf](sunsrays.swf.html)  
+[synodic\_lag.swf](synodic_lag.swf.html)  
+[synodic\_lag\_edu.swf](synodic_lag_edu.swf.html)  
+[synodiccalculator.swf](synodiccalculator.swf.html)  
+[synodiclag.swf](synodiclag.swf.html)  
+[tc\_flat.swf](tc_flat.swf.html)  
+[tc\_globe.swf](tc_globe.swf.html)  
+[telescope10.swf](telescope10.swf.html)  
+[thermal\_distribution.swf](thermal_distribution.swf.html)  
+[threeBeamViews.swf](threeBeamViews.swf.html)  
+[threeviewsspectra.swf](threeviewsspectra.swf.html)  
+[tidesim.swf](tidesim.swf.html)  
+[timeOfDay.swf](timeOfDay.swf.html)  
+[trafficdensity.swf](trafficdensity.swf.html)  
+[transitSimulator.swf](transitSimulator.swf.html)  
+[transitimages.swf](transitimages.swf.html)  
+[transitmovie.swf](transitmovie.swf.html)  
+[transitsimulator.swf](transitsimulator.swf.html)  
+[variableStarPhotometryAnalyzer.swf](variableStarPhotometryAnalyzer.swf.html)  
+[venusphases.swf](venusphases.swf.html)  
+[wagonwheel.swf](wagonwheel.swf.html)  
+[waxing.swf](waxing.swf.html)  
+[zodiac.swf](zodiac.swf.html)
+</details>
 
-## Building, testing or contributing
-
-Please see [the ruffle-web README](../../README.md).
