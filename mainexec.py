@@ -1,0 +1,2 @@
+import sys,subprocess
+print("<div id=\"container\"></div><script src=\"ruffle.js\"></script><script>window.RufflePlayer = window.RufflePlayer || {};window.addEventListener(\"load\", (event) => {const ruffle = window.RufflePlayer.newest();const player = ruffle.createPlayer();const container = document.getElementById(\"container\");container.appendChild(player);player.load(\"%s\");});</script><script src=\"ruffle.js\"></script>" % (sys.argv[1]))
