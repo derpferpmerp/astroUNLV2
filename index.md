@@ -22,6 +22,10 @@ if not on chromebook or if on a supported platform.
 
 The release is the full source code of the webpage, so if you want to build it yourself (the first shell script),
 you can just download that and use that as the archive to run (make sure to rename it to astroUNL.zip)
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
 <details open>
 <summary>SWFS</summary>
 <!--All you need is a blank line-->
