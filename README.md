@@ -1,6 +1,6 @@
 # This took 3 hours.
 ```py
-Coded by Cole Fleming
+Coded By Cole Matheson Fleming
 ```
 
 Every swf from astroUNL's project, for astronomy
