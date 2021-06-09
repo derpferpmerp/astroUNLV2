@@ -1,4 +1,5 @@
 # This took 3 hours.
+`Coded by Cole Fleming`
 
 Every swf from astroUNL's project, for astronomy
 Built by (zip = astroUNL.zip):
@@ -145,6 +146,7 @@ you can just download that and use that as the archive to run (make sure to rena
 <a href="transitmovie.swf.html" style='color:blue;'>transitmovie.swf</a><br>
 <a href="transitsimulator.swf.html" style='color:blue;'>transitsimulator.swf</a><br>
 <a href="variableStarPhotometryAnalyzer.swf.html" style='color:blue;'>variableStarPhotometryAnalyzer.swf</a><br>
-</p></body>
+</p>
+</body>
 
 
