@@ -1,5 +1,7 @@
 # This took 3 hours.
-`Coded by Cole Fleming`
+```py
+Coded by Cole Fleming
+```
 
 Every swf from astroUNL's project, for astronomy
 Built by (zip = astroUNL.zip):
