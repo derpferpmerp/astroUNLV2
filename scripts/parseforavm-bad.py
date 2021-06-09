@@ -1,5 +1,5 @@
 import subprocess
-
+# REQUIRES SWFDUMP (Find Online)
 subprocess.call("mkdir Compatible;mkdir Incompatible", shell=True)
 for f in __import__("os").listdir(__import__("sys").argv[1]):
     if f == "Compatible" or f == "Incompatible" or "&" in f:
