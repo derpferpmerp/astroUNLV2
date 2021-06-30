@@ -146,7 +146,7 @@ you can just download that and use that as the archive to run (make sure to rena
 <a href="thermal_distribution.swf.html" style='color:blue;'>thermal_distribution.swf</a><br>
 <a href="threeviewsspectra.swf.html" style='color:blue;'>threeviewsspectra.swf</a><br>
 <a href="transitmovie.swf.html" style='color:blue;'>transitmovie.swf</a><br>
-<a href="transitsimulator.swf.html" style='color:blue;'>transitsimulator.swf</a><br>
+<a href="transitSimulator.swf.html" style='color:blue;'>transitsimulator.swf</a><br>
 <a href="variableStarPhotometryAnalyzer.swf.html" style='color:blue;'>variableStarPhotometryAnalyzer.swf</a><br>
 </p>
 </body>
