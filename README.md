@@ -130,7 +130,7 @@ you can just download that and use that as the archive to run (make sure to rena
 <a href="ptolemaic.swf.html" style='color:blue;'>ptolemaic.swf</a><br>
 <a href="radecdemo.swf.html" style='color:blue;'>radecdemo.swf</a><br>
 <a href="radialvelocitydemo.swf.html" style='color:blue;'>radialvelocitydemo.swf</a><br>
-<a href="radialvelocitysimulator.swf.html" style='color:blue;'>radialvelocitysimulator.swf</a><br>
+<a href="radialVelocitySimulator.swf.html" style='color:blue;'>radialvelocitysimulator.swf</a><br>
 <a href="seasonsim.swf.html" style='color:blue;'>seasonsim.swf</a><br>
 <a href="siderealSolarTime.swf.html" style='color:blue;'>siderealSolarTime.swf</a><br>
 <a href="siderealTimeAndHourAngleDemo.swf.html" style='color:blue;'>siderealTimeAndHourAngleDemo.swf</a><br>
