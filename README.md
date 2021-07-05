@@ -138,7 +138,7 @@ you can just download that and use that as the archive to run (make sure to rena
 <a href="snCurveExplorer.swf.html" style='color:blue;'>snCurveExplorer.swf</a><br>
 <a href="snellslaw.swf.html" style='color:blue;'>snellslaw.swf</a><br>
 <a href="solarsystemproperties.swf.html" style='color:blue;'>solarsystemproperties.swf</a><br>
-<a href="spectroparallax.swf.html" style='color:blue;'>spectroparallax.swf</a><br>
+<a href="spectroParallax.swf.html" style='color:blue;'>spectroparallax.swf</a><br>
 <a href="spectrum010.swf.html" style='color:blue;'>spectrum010.swf</a><br>
 <a href="stars.swf.html" style='color:blue;'>stars.swf</a><br>
 <a href="stellarHabitableZone.swf.html" style='color:blue;'>stellarHabitableZone.swf</a><br>
