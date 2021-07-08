@@ -25,6 +25,8 @@ if not on chromebook or if on a supported platform.
 
 The release is the full source code of the webpage, so if you want to build it yourself (the first shell script),
 you can just download that and use that as the archive to run (make sure to rename it to astroUNL.zip)
+[Class Action URLS](https://derpferpmerp.github.io/astroUNLV2/classaction/ALL-MAIN)
+
 <div id="container"> </div><body><strong>All SWFS</strong><p>
 <a href="2_LatitudeOfDirectRays.swf.html" style='color:blue;'>2_LatitudeOfDirectRays.swf</a><br>
 <a href="3_RisingAndSettingAzimuthsA.swf.html" style='color:blue;'>3_RisingAndSettingAzimuthsA.swf</a><br>
