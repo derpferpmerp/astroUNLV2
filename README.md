@@ -148,6 +148,7 @@ you can just download that and use that as the archive to run (make sure to rena
 <a href="transitmovie.swf.html" style='color:blue;'>transitmovie.swf</a><br>
 <a href="transitSimulator.swf.html" style='color:blue;'>transitsimulator.swf</a><br>
 <a href="variableStarPhotometryAnalyzer.swf.html" style='color:blue;'>variableStarPhotometryAnalyzer.swf</a><br>
+<a href="hrexplorer.swf.html" style='color:blue;'>hrExplorer.swf</a><br>
 </p>
 </body>
 
