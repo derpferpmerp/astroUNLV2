@@ -132,7 +132,7 @@ you can just download that and use that as the archive to run (make sure to rena
 <a href="ptolemaic.swf.html" style='color:blue;'>ptolemaic.swf</a><br>
 <a href="radecdemo.swf.html" style='color:blue;'>radecdemo.swf</a><br>
 <a href="radialvelocitydemo.swf.html" style='color:blue;'>radialvelocitydemo.swf</a><br>
-<a href="radialVelocitySimulator.swf.html" style='color:blue;'>radialvelocitysimulator.swf</a><br>
+<a href="radialvelocitysimulator.swf.html" style='color:blue;'>radialvelocitysimulator.swf</a><br>
 <a href="seasonsim.swf.html" style='color:blue;'>seasonsim.swf</a><br>
 <a href="siderealSolarTime.swf.html" style='color:blue;'>siderealSolarTime.swf</a><br>
 <a href="siderealTimeAndHourAngleDemo.swf.html" style='color:blue;'>siderealTimeAndHourAngleDemo.swf</a><br>
@@ -140,7 +140,7 @@ you can just download that and use that as the archive to run (make sure to rena
 <a href="snCurveExplorer.swf.html" style='color:blue;'>snCurveExplorer.swf</a><br>
 <a href="snellslaw.swf.html" style='color:blue;'>snellslaw.swf</a><br>
 <a href="solarsystemproperties.swf.html" style='color:blue;'>solarsystemproperties.swf</a><br>
-<a href="spectroParallax.swf.html" style='color:blue;'>spectroparallax.swf</a><br>
+<a href="spectroparallax.swf.html" style='color:blue;'>spectroparallax.swf</a><br>
 <a href="spectrum010.swf.html" style='color:blue;'>spectrum010.swf</a><br>
 <a href="stars.swf.html" style='color:blue;'>stars.swf</a><br>
 <a href="stellarHabitableZone.swf.html" style='color:blue;'>stellarHabitableZone.swf</a><br>
@@ -148,7 +148,7 @@ you can just download that and use that as the archive to run (make sure to rena
 <a href="thermal_distribution.swf.html" style='color:blue;'>thermal_distribution.swf</a><br>
 <a href="threeviewsspectra.swf.html" style='color:blue;'>threeviewsspectra.swf</a><br>
 <a href="transitmovie.swf.html" style='color:blue;'>transitmovie.swf</a><br>
-<a href="transitSimulator.swf.html" style='color:blue;'>transitsimulator.swf</a><br>
+<a href="transitsimulator.swf.html" style='color:blue;'>transitsimulator.swf</a><br>
 <a href="variableStarPhotometryAnalyzer.swf.html" style='color:blue;'>variableStarPhotometryAnalyzer.swf</a><br>
 <a href="hrexplorer.swf.html" style='color:blue;'>hrExplorer.swf</a><br>
 </p>
